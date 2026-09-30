@@ -1,26 +1,37 @@
-name: ACO LAB External Proof
-description: Leave a public non-owner proof for an existing ACO LAB mission intake.
+name: ACO LAB Receipt-Holder Proof
+description: Leave a public receipt-capability claim for an existing ACO LAB post-act return.
 title: "[ACO-EXTERNAL-PROOF] "
 body:
   - type: markdown
     attributes:
       value: |
-        Use this only after ACO LAB has already issued an intake ID.
-        Do not post passwords, API keys, customer secrets, payment information, or the private mission text.
+        Use this only after ACO LAB has issued BOTH an intake ID and a proof key for the return event.
+        This is an account-level receipt-holder claim, not legal identity verification.
+        Do not post passwords, API keys, customer secrets, payment information, or private mission text.
   - type: input
     id: intake_id
     attributes:
       label: ACO_INTAKE_ID
-      description: Paste only the intake ID issued by ACO LAB.
+      description: Paste the exact intake ID issued by ACO LAB.
       placeholder: 123e4567-e89b-42d3-a456-426614174000
+    validations:
+      required: true
+  - type: input
+    id: proof_key
+    attributes:
+      label: ACO_PROOF_KEY
+      description: Paste the separate proof key from the same ACO LAB receipt.
+      placeholder: 223e4567-e89b-42d3-a456-426614174000
     validations:
       required: true
   - type: checkboxes
     id: confirmation
     attributes:
-      label: External actor confirmation
+      label: Receipt-holder confirmation
       options:
-        - label: I am using this GitHub account as the external actor associated with the ACO LAB mission above.
+        - label: I possess the ACO LAB receipt capability for the return event above.
+          required: true
+        - label: I understand this does not prove legal identity, payment, PMF, or customer success.
           required: true
         - label: I have not pasted secrets or confidential mission content into this issue.
           required: true
