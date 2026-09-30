@@ -1,24 +1,46 @@
 # Living World REAL Bridge
 
-Public evidence bridge for experiments that must distinguish **external human action** from owner/test/AI traffic.
+Public evidence bridge for experiments that need a stronger public account-level claim without pretending that a GitHub account proves legal identity.
 
-## ACO LAB External Proof Ledger
+## ACO LAB Receipt-Holder Proof Ledger
 
-ACO LAB accepts missions on its private-backed production system, but the production code repository remains private.
+ACO LAB accepts missions on its private-backed production system, while this repository is a public proof ledger.
 
-When a mission submitter chooses to leave stronger public externality proof, they may create a GitHub issue in this repository containing only the issued intake identifier.
+For the B16 causal path, a qualifying **post-act return** receives:
 
-A valid proof must satisfy all of the following:
+- an `ACO_INTAKE_ID`
+- a separate one-time `ACO_PROOF_KEY`
+
+A public proof must contain both exact values and satisfy all of the following:
 
 - the GitHub account is a normal `User`
-- the account is not `222family`
+- the account is not the known owner login or known owner numeric user ID
 - the account is not an OWNER / MEMBER / COLLABORATOR of this repository
-- the issue contains the exact `ACO_INTAKE_ID`
-- the issue is created after the corresponding ACO LAB mission
-- no passwords, API keys, private customer data, payment information, or other secrets are posted
+- the issue contains an exact `ACO_INTAKE_ID=<value>` line
+- the issue contains an exact `ACO_PROOF_KEY=<value>` line
+- the issue is created after the corresponding ACO LAB return mission
+- no passwords, API keys, customer secrets, payment information, mission text, or other confidential data are posted
 
-This ledger **does not** prove payment, PMF, customer success, or business outcome. It only provides a stronger public externality signal for the matched mission.
+The proof key is a receipt capability. It makes an unrelated account that only learns the intake ID insufficient to qualify the event.
+
+## Truth boundary
+
+This ledger proves at most:
+
+> a non-owner GitHub User account possessed the receipt capability for the matched ACO LAB return event and made a public claim after that return was recorded.
+
+It does **not** prove:
+
+- legal identity
+- that the GitHub account owner and the human form submitter are the same person
+- independence from every possible owner alternate account
+- payment
+- customer success
+- PMF
+- causal business impact
+
+ACO LAB must keep those distinctions explicit.
 
 ## Privacy
 
-Only the intake identifier is required. Do not paste the mission text or confidential business information into this repository.
+Post only the two issued proof markers. Do not paste the mission text or confidential business information.
