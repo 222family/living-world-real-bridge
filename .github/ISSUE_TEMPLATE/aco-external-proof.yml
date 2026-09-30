@@ -1,0 +1,26 @@
+name: ACO LAB External Proof
+description: Leave a public non-owner proof for an existing ACO LAB mission intake.
+title: "[ACO-EXTERNAL-PROOF] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this only after ACO LAB has already issued an intake ID.
+        Do not post passwords, API keys, customer secrets, payment information, or the private mission text.
+  - type: input
+    id: intake_id
+    attributes:
+      label: ACO_INTAKE_ID
+      description: Paste only the intake ID issued by ACO LAB.
+      placeholder: 123e4567-e89b-42d3-a456-426614174000
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: External actor confirmation
+      options:
+        - label: I am using this GitHub account as the external actor associated with the ACO LAB mission above.
+          required: true
+        - label: I have not pasted secrets or confidential mission content into this issue.
+          required: true
