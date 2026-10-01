@@ -44,3 +44,29 @@ ACO LAB must keep those distinctions explicit.
 ## Privacy
 
 Post only the two issued proof markers. Do not paste the mission text or confidential business information.
+
+## Preserved prototype: REAL BRIDGE v0.1
+
+The repository's current primary role is the **ACO LAB Receipt-Holder Proof Ledger** above.
+
+The earlier OMATSURI GATE prototype is preserved as an isolated runnable prototype under:
+
+`prototype/real-bridge-v0.1/`
+
+It is intentionally **not** installed at the repository root, so the current proof-ledger contract, issue flow, and truth boundary remain the primary repository behavior.
+
+Prototype causal intent:
+
+`WORLD → MISSION → HUMAN ACT → REAL RETURN → VERIFY → EXPERIENCE → BEHAVIOR CHANGE → NEXT MISSION → SECOND HUMAN ACT`
+
+The prototype intentionally locks NEXT MISSION after REAL return until VERIFY → EXPERIENCE → CHANGE is proven.
+
+Run locally with no package install:
+
+```bash
+python -m http.server 8000 --directory prototype/real-bridge-v0.1
+```
+
+Then open `http://localhost:8000/`.
+
+Truth boundary: preserving this prototype does not prove the full causal loop, Production deployment, customer value, or PMF.

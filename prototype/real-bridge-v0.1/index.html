@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>おまつりかいじょう — REAL BRIDGE</title>
+  <meta name="description" content="Human ↔ AI ↔ World" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main>
+    <section class="card" aria-live="polite">
+      <div class="mark">🏮 OMATSURI GATE · RUN 001</div>
+
+      <div id="mission-view">
+        <h1>今日のお告げ</h1>
+        <blockquote>今日は、いつも背景になっているものの中に<br />一個だけ主役がいる日。</blockquote>
+        <h2>現実MISSION</h2>
+        <p>普段なら背景として素通りするものを一つ見つけ、<b>30秒だけ「今日の主役」</b>として観察してみよう。</p>
+        <p class="small">帰還したら「何だった？／普段なぜ見ていなかった？／30秒見たら何が見つかった？」を持ち帰る。</p>
+        <button id="go-button" type="button">現実へ出る →</button>
+      </div>
+
+      <div id="return-view" hidden>
+        <h1>おかえり</h1>
+        <p>現実で見つけたことを、そのまま置いていってください。</p>
+        <textarea id="real-input" placeholder="例：コンビニ横の植木。いつも急いでいて見てなかった。小さい実がなっていた。"></textarea>
+        <button id="return-button" type="button">REALを帰還させる</button>
+      </div>
+
+      <div id="received-view" hidden>
+        <h1>REALを受け取った。</h1>
+        <p>ここでは次MISSIONをまだ捏造しません。</p>
+        <div class="receipt">REAL RETURN = STORED<br />NEXT MISSION = LOCKED<br />REASON = VERIFY → EXPERIENCE → CHANGE 待ち</div>
+        <p class="small">このREALが次の世界を本当に変えた時だけ、次のMISSIONが解錠されます。</p>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
