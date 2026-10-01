@@ -61,12 +61,12 @@ Prototype causal intent:
 
 The prototype intentionally locks NEXT MISSION after REAL return until VERIFY → EXPERIENCE → CHANGE is proven.
 
-Run locally from the prototype directory:
+Run locally with no package install:
 
 ```bash
-cd prototype/real-bridge-v0.1
-npm install
-npm run dev
+python -m http.server 8000 --directory prototype/real-bridge-v0.1
 ```
+
+Then open `http://localhost:8000/`.
 
 Truth boundary: preserving this prototype does not prove the full causal loop, Production deployment, customer value, or PMF.
