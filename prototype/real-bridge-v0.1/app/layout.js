@@ -1,1 +1,0 @@
-export const metadata={title:"おまつりかいじょう — REAL BRIDGE",description:"Human ↔ AI ↔ World"};export default function RootLayout({children}){return <html lang="ja"><body>{children}</body></html>}
